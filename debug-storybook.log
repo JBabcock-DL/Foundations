@@ -1,0 +1,42 @@
+[14:41:52.952] [INFO] storybook v10.2.14
+[14:41:53.005] [ERROR] [38;2;241;97;97mSB_CORE-SERVER_0007 (MainFileEvaluationError): Storybook couldn't evaluate your [33m.storybook/main.js[39m file.
+
+Original error:
+[37m/.storybook/main.js:18
+export default config;
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (node:internal/modules/cjs/loader:1742:18)
+    at Module._compile (node:internal/modules/cjs/loader:1785:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1951:10)
+    at Module.load (node:internal/modules/cjs/loader:1532:32)
+    at Module._load (node:internal/modules/cjs/loader:1334:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at loadCJSModuleWithModuleLoad (node:internal/modules/esm/translators:320:3)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:225:7)
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:639:26)[39m[39m
+    at loadMainConfig (file://./node_modules/storybook/dist/_node-chunks/chunk-VCZAAJQM.js:11709:11)
+    at async buildDevStandalone (file://./node_modules/storybook/dist/core-server/index.js:7552:16)
+    at async withTelemetry (file://./node_modules/storybook/dist/_node-chunks/chunk-DTZLXIO2.js:218:12)
+    at async dev (file://./node_modules/storybook/dist/bin/core.js:2734:3)
+    at async _Command.<anonymous> (file://./node_modules/storybook/dist/bin/core.js:2804:92)
+[14:41:53.006] [WARN] Broken build, fix the error above.
+You may need to refresh the browser.
+[14:41:53.007] [WARN]   Failed to load preset: "/Users/jacobbabcock/Documents/GitHub/Foundations/.storybook/main.js"
+[14:41:53.008] [ERROR] ./.storybook/main.js:18
+export default config;
+^^^^^^
+
+[38;2;241;97;97mSyntaxError: Unexpected token 'export'[39m
+    at wrapSafe (node:internal/modules/cjs/loader:1742:18)
+    at Module._compile (node:internal/modules/cjs/loader:1785:20)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1951:10)
+    at Module.load (node:internal/modules/cjs/loader:1532:32)
+    at Module._load (node:internal/modules/cjs/loader:1334:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at loadCJSModuleWithModuleLoad (node:internal/modules/esm/translators:320:3)
+    at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:225:7)
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:639:26)
