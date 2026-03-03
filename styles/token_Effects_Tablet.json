@@ -1,0 +1,42 @@
+{
+  "elevation": {
+    "100": {
+      "$type": "number",
+      "$value": 1
+    },
+    "200": {
+      "$type": "number",
+      "$value": 2
+    },
+    "300": {
+      "$type": "number",
+      "$value": 3
+    },
+    "400": {
+      "$type": "number",
+      "$value": 4
+    }
+  },
+  "shadow": {
+    "danger": {
+      "$type": "color",
+      "$value": "{Color.red.600}"
+    },
+    "default": {
+      "$type": "color",
+      "$value": "{Color.grey.900}"
+    },
+    "primary": {
+      "$type": "color",
+      "$value": "{Color.blue.500}"
+    },
+    "success": {
+      "$type": "color",
+      "$value": "{Color.green.400}"
+    },
+    "warning": {
+      "$type": "color",
+      "$value": "{Color.yellow.400}"
+    }
+  }
+}
