@@ -1,0 +1,130 @@
+{
+  "border": {
+    "0": {
+      "$type": "number",
+      "$value": "{Size.0}"
+    },
+    "lg": {
+      "$type": "number",
+      "$value": "{Size.size-075}"
+    },
+    "md": {
+      "$type": "number",
+      "$value": "{Size.size-050}"
+    },
+    "sm": {
+      "$type": "number",
+      "$value": "{Size.size-025}"
+    }
+  },
+  "padding": {
+    "0": {
+      "$type": "number",
+      "$value": "{Size.0}"
+    },
+    "2xl": {
+      "$type": "number",
+      "$value": "{Size.size-600}"
+    },
+    "3xl": {
+      "$type": "number",
+      "$value": "{Size.size-800}"
+    },
+    "4xl": {
+      "$type": "number",
+      "$value": "{Size.size-1000}"
+    },
+    "lg": {
+      "$type": "number",
+      "$value": "{Size.size-400}"
+    },
+    "md": {
+      "$type": "number",
+      "$value": "{Size.size-300}"
+    },
+    "sm": {
+      "$type": "number",
+      "$value": "{Size.size-200}"
+    },
+    "xl": {
+      "$type": "number",
+      "$value": "{Size.size-500}"
+    },
+    "xs": {
+      "$type": "number",
+      "$value": "{Size.size-100(base multiple)}"
+    }
+  },
+  "radius": {
+    "0": {
+      "$type": "number",
+      "$value": "{Size.0}"
+    },
+    "full": {
+      "$type": "number",
+      "$value": "{Size.size-full}"
+    },
+    "lg": {
+      "$type": "number",
+      "$value": "{Size.size-400}"
+    },
+    "md": {
+      "$type": "number",
+      "$value": "{Size.size-300}"
+    },
+    "sm": {
+      "$type": "number",
+      "$value": "{Size.size-200}"
+    },
+    "xl": {
+      "$type": "number",
+      "$value": "{Size.size-500}"
+    },
+    "xs": {
+      "$type": "number",
+      "$value": "{Size.size-100(base multiple)}"
+    },
+    "xxl": {
+      "$type": "number",
+      "$value": "{Size.size-600}"
+    }
+  },
+  "space": {
+    "0": {
+      "$type": "number",
+      "$value": "{Size.0}"
+    },
+    "2xl": {
+      "$type": "number",
+      "$value": "{Size.size-600}"
+    },
+    "3xl": {
+      "$type": "number",
+      "$value": "{Size.size-800}"
+    },
+    "4xl": {
+      "$type": "number",
+      "$value": "{Size.size-1000}"
+    },
+    "lg": {
+      "$type": "number",
+      "$value": "{Size.size-400}"
+    },
+    "md": {
+      "$type": "number",
+      "$value": "{Size.size-300}"
+    },
+    "sm": {
+      "$type": "number",
+      "$value": "{Size.size-200}"
+    },
+    "xl": {
+      "$type": "number",
+      "$value": "{Size.size-500}"
+    },
+    "xs": {
+      "$type": "number",
+      "$value": "{Size.size-100(base multiple)}"
+    }
+  }
+}
