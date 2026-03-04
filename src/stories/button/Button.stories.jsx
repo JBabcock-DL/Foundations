@@ -1,7 +1,7 @@
 import React from 'react';
 import { fn } from 'storybook/test';
 
-import { Button } from './Button';
+import { Button, MATERIAL_ICON_NAMES } from './Button';
 
 export default {
   title: 'Foundations/PrimaryButton',
@@ -19,6 +19,10 @@ export default {
       control: 'select',
       options: ['Enabled', 'Hovered', 'Focused', 'Pressed', 'Disabled'],
     },
+    icon: {
+      control: 'select',
+      options: MATERIAL_ICON_NAMES,
+    },
     showLeadingIcon: { control: 'boolean' },
     showTrailingIcon: { control: 'boolean' },
     showFocusIndicator: { control: 'boolean' },
@@ -33,6 +37,7 @@ export const Playground = {
     label: 'Label',
     size: 'Small',
     state: 'Enabled',
+    icon: 'star',
     showLeadingIcon: true,
     showTrailingIcon: true,
     showFocusIndicator: false,
@@ -52,6 +57,7 @@ export const AllSizes = {
   ),
   args: {
     label: 'Label',
+    icon: 'star',
     showLeadingIcon: true,
     showTrailingIcon: true,
     showFocusIndicator: false,
@@ -69,6 +75,7 @@ export const AllStates = {
   args: {
     label: 'Label',
     size: 'Medium',
+    icon: 'star',
     showLeadingIcon: true,
     showTrailingIcon: true,
     showFocusIndicator: false,
@@ -92,6 +99,7 @@ export const VariantMatrix = {
   ),
   args: {
     label: 'Label',
+    icon: 'star',
     showLeadingIcon: true,
     showTrailingIcon: true,
     showFocusIndicator: false,

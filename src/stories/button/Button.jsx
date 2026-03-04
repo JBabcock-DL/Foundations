@@ -4,10 +4,13 @@ import PropTypes from 'prop-types';
 import './button.css';
 import { hexToRgba, token, toPx } from '../tokenResolver';
 
+const FONT_FAMILY_BODY = token('Typography.font-face.body');
+export const MATERIAL_ICON_NAMES = ['star', 'favorite', 'check', 'arrow_forward', 'home'];
+
 const SIZE_CONFIG = {
   XSmall: {
     icon: token('Size.size-500'),
-    fontFamily: token('Label.MD.Font Family'),
+    fontFamily: FONT_FAMILY_BODY,
     fontSize: token('Label.MD.Font Size'),
     fontWeight: token('Typography.weight.regular'),
     lineHeight: token('Label.MD.Line Height'),
@@ -17,7 +20,7 @@ const SIZE_CONFIG = {
   },
   Small: {
     icon: token('Size.size-500'),
-    fontFamily: token('Label.MD.Font Family'),
+    fontFamily: FONT_FAMILY_BODY,
     fontSize: token('Label.MD.Font Size'),
     fontWeight: token('Typography.weight.regular'),
     lineHeight: token('Label.MD.Line Height'),
@@ -27,7 +30,7 @@ const SIZE_CONFIG = {
   },
   Medium: {
     icon: token('Size.size-600'),
-    fontFamily: token('Label.LG.Font Family'),
+    fontFamily: FONT_FAMILY_BODY,
     fontSize: token('Label.LG.Font Size'),
     fontWeight: token('Typography.weight.regular'),
     lineHeight: token('Label.LG.Line Height'),
@@ -37,7 +40,7 @@ const SIZE_CONFIG = {
   },
   Large: {
     icon: token('Size.size-800'),
-    fontFamily: token('Label.LG.Font Family'),
+    fontFamily: FONT_FAMILY_BODY,
     fontSize: token('Size.size-600'),
     fontWeight: token('Typography.weight.regular'),
     lineHeight: token('Size.size-800'),
@@ -47,7 +50,7 @@ const SIZE_CONFIG = {
   },
   XLarge: {
     icon: token('Size.size-1000'),
-    fontFamily: token('Label.LG.Font Family'),
+    fontFamily: FONT_FAMILY_BODY,
     fontSize: token('Size.size-800'),
     fontWeight: token('Typography.weight.regular'),
     lineHeight: token('Size.size-1000'),
@@ -85,24 +88,22 @@ const STATE_CONFIG = {
   },
 };
 
-function Icon({ size }) {
+function Icon({ icon, size }) {
+  const symbol = MATERIAL_ICON_NAMES.includes(icon) ? icon : 'star';
+
   return (
-    <svg
+    <span
       aria-hidden="true"
-      className="primary-button__icon"
-      height={size}
-      viewBox="0 0 20 20"
-      width={size}
+      className="material-symbols-rounded primary-button__icon"
+      style={{ fontSize: toPx(size) }}
     >
-      <path
-        d="M10 2.5L12.317 7.195L17.5 7.947L13.75 11.602L14.635 16.765L10 14.327L5.365 16.765L6.25 11.602L2.5 7.947L7.683 7.195L10 2.5Z"
-        fill="currentColor"
-      />
-    </svg>
+      {symbol}
+    </span>
   );
 }
 
 Icon.propTypes = {
+  icon: PropTypes.string.isRequired,
   size: PropTypes.number.isRequired,
 };
 
@@ -111,6 +112,7 @@ export const Button = ({
   label = 'Label',
   size = 'Small',
   state = 'Enabled',
+  icon = 'star',
   showLeadingIcon = true,
   showTrailingIcon = true,
   showFocusIndicator = false,
@@ -156,15 +158,16 @@ export const Button = ({
       type="button"
     >
       <span className="primary-button__state-layer" style={stateLayerStyle}>
-        {showLeadingIcon ? <Icon size={sizeConfig.icon} /> : null}
+        {showLeadingIcon ? <Icon icon={icon} size={sizeConfig.icon} /> : null}
         <span className="primary-button__label" style={labelStyle}>{label}</span>
-        {showTrailingIcon ? <Icon size={sizeConfig.icon} /> : null}
+        {showTrailingIcon ? <Icon icon={icon} size={sizeConfig.icon} /> : null}
       </span>
     </button>
   );
 };
 
 Button.propTypes = {
+  icon: PropTypes.string,
   label: PropTypes.string,
   size: PropTypes.oneOf(['XSmall', 'Small', 'Medium', 'Large', 'XLarge']),
   state: PropTypes.oneOf(['Enabled', 'Hovered', 'Focused', 'Pressed', 'Disabled']),
