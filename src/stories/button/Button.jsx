@@ -2,50 +2,55 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './button.css';
-import { hexToRgba, token, toPx } from './buttonTokens';
+import { hexToRgba, token, toPx } from '../tokenResolver';
 
 const SIZE_CONFIG = {
   XSmall: {
-    icon: token('space.xl'),
+    icon: token('Size.size-500'),
+    fontFamily: token('Label.MD.Font Family'),
     fontSize: token('Label.MD.Font Size'),
+    fontWeight: token('Typography.weight.regular'),
     lineHeight: token('Label.MD.Line Height'),
-    fontWeight: token('Label.MD.Font Weight'),
     gap: token('space.xs'),
     paddingX: token('padding.md'),
     paddingY: token('padding.xs'),
   },
   Small: {
-    icon: token('space.xl'),
+    icon: token('Size.size-500'),
+    fontFamily: token('Label.MD.Font Family'),
     fontSize: token('Label.MD.Font Size'),
+    fontWeight: token('Typography.weight.regular'),
     lineHeight: token('Label.MD.Line Height'),
-    fontWeight: token('Label.MD.Font Weight'),
     gap: token('space.sm'),
     paddingX: token('padding.md'),
     paddingY: token('padding.sm'),
   },
   Medium: {
-    icon: token('space.2xl'),
+    icon: token('Size.size-600'),
+    fontFamily: token('Label.LG.Font Family'),
     fontSize: token('Label.LG.Font Size'),
+    fontWeight: token('Typography.weight.regular'),
     lineHeight: token('Label.LG.Line Height'),
-    fontWeight: token('Label.LG.Font Weight'),
     gap: token('space.sm'),
     paddingX: token('padding.xl'),
     paddingY: token('padding.md'),
   },
   Large: {
-    icon: token('space.3xl'),
-    fontSize: token('Label.LG.Font Size'),
-    lineHeight: token('Label.LG.Line Height'),
-    fontWeight: token('Label.LG.Font Weight'),
+    icon: token('Size.size-800'),
+    fontFamily: token('Label.LG.Font Family'),
+    fontSize: token('Size.size-600'),
+    fontWeight: token('Typography.weight.regular'),
+    lineHeight: token('Size.size-800'),
     gap: token('space.md'),
     paddingX: token('padding.4xl'),
     paddingY: token('padding.3xl'),
   },
   XLarge: {
-    icon: token('space.4xl'),
-    fontSize: token('Label.LG.Font Size'),
-    lineHeight: token('Label.LG.Line Height'),
-    fontWeight: token('Label.LG.Font Weight'),
+    icon: token('Size.size-1000'),
+    fontFamily: token('Label.LG.Font Family'),
+    fontSize: token('Size.size-800'),
+    fontWeight: token('Typography.weight.regular'),
+    lineHeight: token('Size.size-1000'),
     gap: token('space.md'),
     paddingX: token('padding.4xl'),
     paddingY: token('padding.4xl'),
@@ -111,8 +116,8 @@ export const Button = ({
   showFocusIndicator = false,
   onClick,
 }) => {
-  const sizeConfig = SIZE_CONFIG[size];
-  const stateConfig = STATE_CONFIG[state];
+  const sizeConfig = SIZE_CONFIG[size] ?? SIZE_CONFIG.Small;
+  const stateConfig = STATE_CONFIG[state] ?? STATE_CONFIG.Enabled;
   const isDisabled = state === 'Disabled';
   const focusRingWidth = token('border.lg');
   const focusRingColor = hexToRgba(token('button.primary.pressed'), 0.35);
@@ -120,9 +125,11 @@ export const Button = ({
   const buttonStyle = {
     backgroundColor: stateConfig.background,
     borderRadius: toPx(token('radius.lg')),
-    boxShadow: showFocusIndicator ? `0 0 0 ${toPx(focusRingWidth)} ${focusRingColor}` : 'none',
+    boxShadow: showFocusIndicator
+      ? `0 0 0 ${toPx(focusRingWidth)} ${focusRingColor}`
+      : 'none',
     color: stateConfig.foreground,
-    fontFamily: token('Label.MD.Font Family'),
+    fontFamily: sizeConfig.fontFamily,
     fontSize: toPx(sizeConfig.fontSize),
     fontWeight: sizeConfig.fontWeight,
     lineHeight: toPx(sizeConfig.lineHeight),
@@ -142,11 +149,7 @@ export const Button = ({
 
   return (
     <button
-      className={[
-        'primary-button',
-        `primary-button--${size.toLowerCase()}`,
-        `primary-button--${state.toLowerCase()}`,
-      ].join(' ')}
+      className={isDisabled ? 'primary-button primary-button--disabled' : 'primary-button'}
       disabled={isDisabled}
       onClick={onClick}
       style={buttonStyle}

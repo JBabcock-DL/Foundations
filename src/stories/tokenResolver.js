@@ -3,12 +3,34 @@ import layoutMobile from '../../styles/token_Layout_Mobile.json';
 import themeLight from '../../styles/token_Theme_Lightmode.json';
 import textStylesMobile from '../../styles/token_TextStyles_Mobile.json';
 
-const TOKEN_TREE = {
-  ...primitives,
-  ...layoutMobile,
-  ...themeLight,
-  ...textStylesMobile,
-};
+function isPlainObject(value) {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+function deepMerge(...sources) {
+  const target = {};
+
+  for (const source of sources) {
+    for (const [key, value] of Object.entries(source)) {
+      if (isPlainObject(value) && isPlainObject(target[key])) {
+        target[key] = deepMerge(target[key], value);
+      } else if (isPlainObject(value)) {
+        target[key] = deepMerge(value);
+      } else {
+        target[key] = value;
+      }
+    }
+  }
+
+  return target;
+}
+
+const TOKEN_TREE = deepMerge(
+  primitives,
+  layoutMobile,
+  themeLight,
+  textStylesMobile,
+);
 
 function getPathValue(path) {
   return path.split('.').reduce((acc, key) => acc?.[key], TOKEN_TREE);
