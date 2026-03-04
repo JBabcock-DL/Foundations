@@ -1,6 +1,8 @@
 
 
 /** @type { import('@storybook/react-vite').StorybookConfig } */
+const isChromaticBuild = Boolean(process.env.CHROMATIC);
+
 const config = {
   "stories": [
     "../src/**/*.mdx",
@@ -8,10 +10,10 @@ const config = {
   ],
   "addons": [
     "@chromatic-com/storybook",
-    "@storybook/addon-vitest",
     "@storybook/addon-a11y",
-    "@storybook/addon-docs"
-  ],
+    "@storybook/addon-docs",
+    !isChromaticBuild && "@storybook/addon-vitest"
+  ].filter(Boolean),
   "framework": "@storybook/react-vite"
 };
 export default config;
