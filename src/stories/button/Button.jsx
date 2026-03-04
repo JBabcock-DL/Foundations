@@ -120,7 +120,6 @@ export const Button = ({
 }) => {
   const [interaction, setInteraction] = useState({
     hovered: false,
-    focused: false,
     pressed: false,
   });
 
@@ -129,18 +128,16 @@ export const Button = ({
     ? state
     : interaction.pressed
       ? 'Pressed'
-      : interaction.focused
-        ? 'Focused'
-        : interaction.hovered
-          ? 'Hovered'
-          : 'Enabled';
+      : interaction.hovered
+        ? 'Hovered'
+        : 'Enabled';
 
   const sizeConfig = SIZE_CONFIG[size] ?? SIZE_CONFIG.Small;
   const stateConfig = STATE_CONFIG[effectiveState] ?? STATE_CONFIG.Enabled;
   const isDisabled = state === 'Disabled';
   const focusRingWidth = token('border.lg');
   const focusRingColor = hexToRgba(token('button.primary.pressed'), 0.35);
-  const shouldShowFocusRing = showFocusIndicator || effectiveState === 'Focused';
+  const shouldShowFocusRing = showFocusIndicator;
 
   const buttonStyle = {
     backgroundColor: stateConfig.background,
@@ -171,9 +168,7 @@ export const Button = ({
     <button
       className={isDisabled ? 'primary-button primary-button--disabled' : 'primary-button'}
       disabled={isDisabled}
-      onBlur={isInteractive ? () => setInteraction((prev) => ({ ...prev, focused: false, pressed: false })) : undefined}
       onClick={onClick}
-      onFocus={isInteractive ? () => setInteraction((prev) => ({ ...prev, focused: true })) : undefined}
       onKeyDown={isInteractive ? (event) => {
         if (event.key === 'Enter' || event.key === ' ') {
           setInteraction((prev) => ({ ...prev, pressed: true }));
@@ -181,13 +176,13 @@ export const Button = ({
       } : undefined}
       onKeyUp={isInteractive ? (event) => {
         if (event.key === 'Enter' || event.key === ' ') {
-          setInteraction((prev) => ({ ...prev, pressed: false }));
+          setInteraction((prev) => ({ ...prev, hovered: false, pressed: false }));
         }
       } : undefined}
       onMouseDown={isInteractive ? () => setInteraction((prev) => ({ ...prev, pressed: true })) : undefined}
       onMouseEnter={isInteractive ? () => setInteraction((prev) => ({ ...prev, hovered: true })) : undefined}
       onMouseLeave={isInteractive ? () => setInteraction((prev) => ({ ...prev, hovered: false, pressed: false })) : undefined}
-      onMouseUp={isInteractive ? () => setInteraction((prev) => ({ ...prev, pressed: false })) : undefined}
+      onMouseUp={isInteractive ? () => setInteraction((prev) => ({ ...prev, hovered: false, pressed: false })) : undefined}
       style={buttonStyle}
       type="button"
     >
