@@ -1,0 +1,13 @@
+{
+  "codeConnect": {
+    "include": [
+      "src/**/*.{js,jsx,ts,tsx}"
+    ],
+    "exclude": [
+      "**/node_modules/**",
+      "storybook-static/**",
+      "build/**",
+      "dist/**"
+    ]
+  }
+}
