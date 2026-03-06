@@ -1,7 +1,7 @@
 import primitives from '../../styles/token_Primitives_Mode1.json';
 import layoutMobile from '../../styles/token_Layout_Mobile.json';
 import themeLight from '../../styles/token_Theme_Lightmode.json';
-import textStylesMobile from '../../styles/token_TextStyles_Mobile.json';
+import typographyNativeMobile from '../../styles/token_Typography-Native_Mobile.json';
 
 function isPlainObject(value) {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
@@ -29,7 +29,7 @@ const TOKEN_TREE = deepMerge(
   primitives,
   layoutMobile,
   themeLight,
-  textStylesMobile,
+  typographyNativeMobile,
 );
 
 function getPathValue(path) {
