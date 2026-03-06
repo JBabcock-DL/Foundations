@@ -301,11 +301,11 @@
     "font-face": {
       "body": {
         "$type": "string",
-        "$value": "Saans VF-TRIAL"
+        "$value": "Inter"
       },
       "display": {
         "$type": "string",
-        "$value": "Saans VF-TRIAL"
+        "$value": "Inter"
       }
     },
     "weight": {
