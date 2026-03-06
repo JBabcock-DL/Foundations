@@ -301,11 +301,11 @@
     "font-face": {
       "body": {
         "$type": "string",
-        "$value": "\"Saans VF-TRIAL\", \"Helvetica Neue\", Arial, sans-serif"
+        "$value": "Saans VF-TRIAL"
       },
       "display": {
         "$type": "string",
-        "$value": "\"Saans VF-TRIAL\", \"Helvetica Neue\", Arial, sans-serif"
+        "$value": "Saans VF-TRIAL"
       }
     },
     "weight": {
