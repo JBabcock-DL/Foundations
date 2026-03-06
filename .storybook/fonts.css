@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Saans VF-TRIAL';
+  src:
+    local('Saans VF TRIAL'),
+    local('Saans VF-TRIAL'),
+    url('/fonts/SaansVF-TRIAL.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saans VF-TRIAL';
+  src:
+    local('Saans VF TRIAL Italic'),
+    local('Saans VF-TRIAL Italic'),
+    url('/fonts/SaansVF-TRIAL-Italic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+}

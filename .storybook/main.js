@@ -8,6 +8,7 @@ const config = {
     "../src/**/*.mdx",
     "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
+  "staticDirs": ["../public"],
   "addons": [
     "@chromatic-com/storybook",
     "@storybook/addon-a11y",
