@@ -37,7 +37,7 @@
         "$type": "color",
         "$value": "{Color.grey.300}"
       },
-      "on container": {
+      "on disabled": {
         "$type": "color",
         "$value": "{Color.grey.600}"
       }
@@ -89,19 +89,19 @@
     "surface": {
       "container": {
         "$type": "color",
-        "$value": "{Color.grey.100}"
-      },
-      "dim": {
-        "$type": "color",
         "$value": "{Color.grey.300}"
       },
-      "high": {
+      "container-high": {
         "$type": "color",
         "$value": "{Color.grey.400}"
       },
-      "highest": {
+      "container-highest": {
         "$type": "color",
         "$value": "{Color.grey.500}"
+      },
+      "container-low": {
+        "$type": "color",
+        "$value": "{Color.grey.100}"
       },
       "inverse": {
         "$type": "color",
@@ -261,6 +261,10 @@
       }
     },
     "tertiary": {
+      "default": {
+        "$type": "color",
+        "$value": "{Color.grey.200}"
+      },
       "pressed": {
         "$type": "color",
         "$value": "{Color.blue.200}"

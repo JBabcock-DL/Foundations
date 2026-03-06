@@ -1,0 +1,612 @@
+{
+  "Body": {
+    "LG": {
+      "emphasis": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 18
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.semibold}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 26
+        }
+      },
+      "italic": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 18
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.regular}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 26
+        }
+      },
+      "link": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 18
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.semibold}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 26
+        }
+      },
+      "regular": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 18
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.regular}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 26
+        }
+      },
+      "strikethrough": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 18
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": 400
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 26
+        }
+      }
+    },
+    "MD": {
+      "emphasis": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 16
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.semibold}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 24
+        }
+      },
+      "italic": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 16
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.regular}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 24
+        }
+      },
+      "link": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 16
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.semibold}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 24
+        }
+      },
+      "regular": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 16
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.regular}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 24
+        }
+      },
+      "strikethrough": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 16
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.regular}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 24
+        }
+      }
+    },
+    "SM": {
+      "emphasis": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 14
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.semibold}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 20
+        }
+      },
+      "italic": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 14
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.regular}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 20
+        }
+      },
+      "link": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 14
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.semibold}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 20
+        }
+      },
+      "regular": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 14
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.regular}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 20
+        }
+      },
+      "strikethrough": {
+        "Font Family": {
+          "$type": "string",
+          "$value": "{Typography.font-face.body}"
+        },
+        "Font Size": {
+          "$type": "number",
+          "$value": 14
+        },
+        "Font Weight": {
+          "$type": "number",
+          "$value": "{Typography.weight.regular}"
+        },
+        "Letter Spacing": {
+          "$type": "number",
+          "$value": 0
+        },
+        "Line Height": {
+          "$type": "number",
+          "$value": 20
+        }
+      }
+    }
+  },
+  "Display": {
+    "LG": {
+      "Font Family": {
+        "$type": "string",
+        "$value": "{Typography.font-face.display}"
+      },
+      "Font Size": {
+        "$type": "number",
+        "$value": 68
+      },
+      "Font Weight": {
+        "$type": "number",
+        "$value": "{Typography.weight.semibold}"
+      },
+      "Letter Spacing": {
+        "$type": "number",
+        "$value": 0
+      },
+      "Line Height": {
+        "$type": "number",
+        "$value": 74
+      }
+    },
+    "MD": {
+      "Font Family": {
+        "$type": "string",
+        "$value": "{Typography.font-face.display}"
+      },
+      "Font Size": {
+        "$type": "number",
+        "$value": 54
+      },
+      "Font Weight": {
+        "$type": "number",
+        "$value": "{Typography.weight.semibold}"
+      },
+      "Letter Spacing": {
+        "$type": "number",
+        "$value": 0
+      },
+      "Line Height": {
+        "$type": "number",
+        "$value": 62
+      }
+    },
+    "SM": {
+      "Font Family": {
+        "$type": "string",
+        "$value": "{Typography.font-face.display}"
+      },
+      "Font Size": {
+        "$type": "number",
+        "$value": 44
+      },
+      "Font Weight": {
+        "$type": "number",
+        "$value": "{Typography.weight.semibold}"
+      },
+      "Letter Spacing": {
+        "$type": "number",
+        "$value": 0
+      },
+      "Line Height": {
+        "$type": "number",
+        "$value": 52
+      }
+    }
+  },
+  "Headline": {
+    "LG": {
+      "Font Family": {
+        "$type": "string",
+        "$value": "{Typography.font-face.display}"
+      },
+      "Font Size": {
+        "$type": "number",
+        "$value": 36
+      },
+      "Font Weight": {
+        "$type": "number",
+        "$value": "{Typography.weight.semibold}"
+      },
+      "Letter Spacing": {
+        "$type": "number",
+        "$value": 0
+      },
+      "Line Height": {
+        "$type": "number",
+        "$value": 44
+      }
+    },
+    "MD": {
+      "Font Family": {
+        "$type": "string",
+        "$value": "{Typography.font-face.display}"
+      },
+      "Font Size": {
+        "$type": "number",
+        "$value": 32
+      },
+      "Font Weight": {
+        "$type": "number",
+        "$value": "{Typography.weight.semibold}"
+      },
+      "Letter Spacing": {
+        "$type": "number",
+        "$value": 0
+      },
+      "Line Height": {
+        "$type": "number",
+        "$value": 40
+      }
+    },
+    "SM": {
+      "Font Family": {
+        "$type": "string",
+        "$value": "{Typography.font-face.display}"
+      },
+      "Font Size": {
+        "$type": "number",
+        "$value": 28
+      },
+      "Font Weight": {
+        "$type": "number",
+        "$value": "{Typography.weight.semibold}"
+      },
+      "Letter Spacing": {
+        "$type": "number",
+        "$value": 0
+      },
+      "Line Height": {
+        "$type": "number",
+        "$value": 34
+      }
+    }
+  },
+  "Label": {
+    "LG": {
+      "Font Family": {
+        "$type": "string",
+        "$value": "{Typography.font-face.body}"
+      },
+      "Font Size": {
+        "$type": "number",
+        "$value": 16
+      },
+      "Font Weight": {
+        "$type": "number",
+        "$value": "{Typography.weight.bold}"
+      },
+      "Letter Spacing": {
+        "$type": "number",
+        "$value": 0
+      },
+      "Line Height": {
+        "$type": "number",
+        "$value": 24
+      }
+    },
+    "MD": {
+      "Font Family": {
+        "$type": "string",
+        "$value": "{Typography.font-face.body}"
+      },
+      "Font Size": {
+        "$type": "number",
+        "$value": 14
+      },
+      "Font Weight": {
+        "$type": "number",
+        "$value": "{Typography.weight.bold}"
+      },
+      "Letter Spacing": {
+        "$type": "number",
+        "$value": 0
+      },
+      "Line Height": {
+        "$type": "number",
+        "$value": 20
+      }
+    },
+    "SM": {
+      "Font Family": {
+        "$type": "string",
+        "$value": "{Typography.font-face.body}"
+      },
+      "Font Size": {
+        "$type": "number",
+        "$value": 12
+      },
+      "Font Weight": {
+        "$type": "number",
+        "$value": "{Typography.weight.bold}"
+      },
+      "Letter Spacing": {
+        "$type": "number",
+        "$value": 0
+      },
+      "Line Height": {
+        "$type": "number",
+        "$value": 16
+      }
+    }
+  },
+  "Title": {
+    "LG": {
+      "Font Family": {
+        "$type": "string",
+        "$value": "{Typography.font-face.body}"
+      },
+      "Font Size": {
+        "$type": "number",
+        "$value": 24
+      },
+      "Font Weight": {
+        "$type": "number",
+        "$value": "{Typography.weight.semibold}"
+      },
+      "Letter Spacing": {
+        "$type": "number",
+        "$value": 0
+      },
+      "Line Height": {
+        "$type": "number",
+        "$value": 30
+      }
+    },
+    "MD": {
+      "Font Family": {
+        "$type": "string",
+        "$value": "{Typography.font-face.body}"
+      },
+      "Font Size": {
+        "$type": "number",
+        "$value": 18
+      },
+      "Font Weight": {
+        "$type": "number",
+        "$value": "{Typography.weight.semibold}"
+      },
+      "Letter Spacing": {
+        "$type": "number",
+        "$value": 0
+      },
+      "Line Height": {
+        "$type": "number",
+        "$value": 26
+      }
+    },
+    "SM": {
+      "Font Family": {
+        "$type": "string",
+        "$value": "{Typography.font-face.body}"
+      },
+      "Font Size": {
+        "$type": "number",
+        "$value": 16
+      },
+      "Font Weight": {
+        "$type": "number",
+        "$value": "{Typography.weight.semibold}"
+      },
+      "Letter Spacing": {
+        "$type": "number",
+        "$value": 0
+      },
+      "Line Height": {
+        "$type": "number",
+        "$value": 24
+      }
+    }
+  }
+}
