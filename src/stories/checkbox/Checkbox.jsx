@@ -37,7 +37,7 @@ const COLORS = {
   errorBorder: token('border.danger.default'),
   errorRipple: token('button.danger.ripple'),
   disabledFill: token('background.disabled.default'),
-  disabledGlyph: token('background.disabled.on container'),
+  disabledGlyph: token('background.disabled.on disabled'),
   disabledBorder: token('border.disabled.default'),
 };
 
