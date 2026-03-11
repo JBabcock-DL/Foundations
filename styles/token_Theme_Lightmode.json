@@ -53,7 +53,7 @@
       },
       "default": {
         "$type": "color",
-        "$value": "{Color.blue.500}"
+        "$value": "{Color.blue.400}"
       },
       "on container": {
         "$type": "color",
